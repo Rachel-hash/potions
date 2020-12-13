@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <!-- I know that this page is correct! -->
+        <div class="container">
+            <div class="row">
+
+                <div class="col text-center h3" id="potionsNum">potions collected: 0</div>
+            </div>
+            <div class="row">
+                <div class="col h5" id="malfoyNum">Malfoys collected: 0</div>
+                <div class="col h5" id="macmillanNum">Macmillans collected: 0</div>
+                <div class="col h5" id="grangerNum">Grangers collected: 0</div>
+                <div class="col h5" id="snapeNum">Snapes collected: 0</div>
+            </div>
+            <div class="row mb-3 justify-content-center ">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <img id="malfoy" onclick="upgradeMalfoy()"
+                                src="https://hips.hearstapps.com/cosmouk.cdnds.net/15/08/nrm_1424419881-draco-malfoy-harry-potter.jpg">
+                        </div>
+                        <div class="col-6 ml-0 pl-0">
+                            <ul class="list-group ml-1">
+                                <li class="upgrades ">price: $ <span id="malfoyPrice"> 100</span></li>
+                                <li class="upgrades">multiplier: 2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <img id="malfoy" onclick="upgradeMacmillan()"
+                                src="https://i.pinimg.com/originals/77/ea/20/77ea2000fe024c130c835dbcb7913b18.jpg">
+                        </div>
+                        <div class="col-6 ml-0 pl-0">
+                            <ul class="list-group ml-1">
+                                <li class="upgrades ">price: $ <span id="macmillanPrice"> 300</span></li>
+                                <li class="upgrades">multiplier: 10</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <img id="malfoy" onclick="upgradeGranger()"
+                                src="https://i.pinimg.com/736x/cf/f2/3c/cff23c0afdc574fb936161897ad07696.jpg">
+                        </div>
+                        <div class="col-6 ml-0 pl-0">
+                            <ul class="list-group ml-1">
+                                <li class="upgrades ">price: $ <span id="grangerPrice"> 1000</span></li>
+                                <li class="upgrades">multiplier: 100</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-6 ">
+                            <img id="malfoy" onclick="upgradeSnape()"
+                                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1452787089i/17743242.jpg">
+                        </div>
+                        <div class="col-6 ml-0 pl-0">
+                            <ul class="list-group ml-1">
+                                <li class="upgrades ">price: $ <span id="snapePrice"> 10000</span></li>
+                                <li class="upgrades">multiplier: 200</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col" onclick="add()">
+                    <img src="https://pbcdn1.podbean.com/imglogo/ep-logo/pbblog812833/wizards_cauldron_brisbane.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
